@@ -1,2 +1,8 @@
 # 精简博客园自定义主题
 
+精简风格，去除博客园顶部logo和底部广告
+
+[博客地址：https://www.cnblogs.com/liyaocool](https://www.cnblogs.com/liyaocool)
+
+## 展示
+![tu]()
