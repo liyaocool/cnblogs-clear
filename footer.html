@@ -7,7 +7,30 @@
 <!-- 自定义js脚本 -->
 <script>
     // 初始化
-    function init() {
+    init();
 
+    function init() {
+        autoOpenNav();
+    }
+
+    // 自动打开 markdown目录导航
+    function autoOpenNav() {
+        let e = document.createEvent("MouseEvents");
+        e.initEvent("click", true, true);
+        document.getElementsByClassName("cnblogs-toc-button")[0].dispatchEvent(e);
+
+        let e2 = document.createEvent("MouseEvents");
+        e2.initEvent("click", true, true);
+        document.getElementsByClassName("cnblogs-toc-pinned-button")[0].dispatchEvent(e2);
+
+
+        //存在导航浮窗（只操作第一个导航窗口）
+        let tippy1= document.querySelector(`#tippy-1`);
+        if(tippy1 != undefined){
+            tippy1.setAttribute("style","display:none")
+        }
+
+        let navBox = document.querySelector("#winbox-1");
+        navBox.setAttribute("style", "top:50px;left:auto;right:4%; background: var(--cnblogs-toc-bg-color); transform: translate(0px, 0px); width: 240px; min-height: 400px; z-index: 9999;")
     }
 </script>

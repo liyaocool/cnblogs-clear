@@ -2,8 +2,13 @@
 .has-navbar {
     background-color: #fafdfa;
 }
+/* 去除顶部广告 */
+.bannerbar.forpc{
+    display: none;
+}
 #home {
-    width: 80%;
+    width: 74%;
+    margin: 0 auto 0 0;
 }
 #blog-calendar {
     display: none !important;
